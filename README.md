@@ -16,3 +16,9 @@ diff = set(X_val['Route'])-set(route_encoder.classes_)
 for items in diff:
     route_encoder.classes_ = np.append(route_encoder.classes_,items)
 ```    
+
+#### Binning using cut
+```python
+cut_bins = [-300,-250,-200,-150, -100, -50, 0, 50, 100, 150, 200, 250, 300]
+pd.cut(Y_predict, bins=cut_bins).value_counts()
+```
