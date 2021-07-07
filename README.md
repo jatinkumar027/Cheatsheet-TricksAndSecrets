@@ -42,3 +42,9 @@ function redirectPost(url, data) {
     form.submit();
 }
 ```
+#### write response
+
+```javascript
+response.setContentType("application/json");
+response.setCharacterEncoding("UTF-8");
+response.getWriter().write(jsonresponse);
