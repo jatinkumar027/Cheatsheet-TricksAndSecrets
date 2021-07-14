@@ -49,3 +49,31 @@ response.setContentType("application/json");
 response.setCharacterEncoding("UTF-8");
 response.getWriter().write(jsonresponse);
 ```
+
+# HTML
+
+#### for a line
+
+```html
+<hr> 
+```
+
+
+# CSS
+
+#### for adding a good background image easily
+
+```css
+header::before{
+            background: url('https://source.unsplash.com/collection/190727/1600x900') no-repeat center center/cover;
+            content: "";
+            position: absolute;
+            top:0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.3;
+        }
+
+```
