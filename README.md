@@ -77,3 +77,48 @@ header::before{
         }
 
 ```
+
+#### grid
+
+```css
+display: grid;
+grid-template-columns: 300px 100px 100px;
+grid-template-columns: 300px auto 100px;
+grid-template-columns: 1fr 4fr 1fr;
+grid-template-columns: repeat(3, auto);
+
+grid-column-gap: 7rem;
+grid-row-gap: 1rem;
+grid-gap: 2rem;
+
+grid-template-rows: 1fr 1fr 4fr;
+grid-auto-rows: 2fr;
+
+grid-column-start: 1;
+grid-column-end: 3;
+grid-row-start: 1;
+grid-row-end: 3;
+grid-column: 1 / span 3;
+grid-row: 1 / span 3;
+
+grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+grid-template-columns: repeat(auto-fit, minmax(300px, 400px);
+
+grid-template-areas: 
+'navbar navbar navbar navbar' 
+'section section section aside'
+'footer footer footer footer ';
+#navbar{
+        grid-area: navbar;
+    }
+#section{
+    grid-area: section;
+}
+#aside{
+    grid-area: aside;
+}
+footer{
+    grid-area: footer;
+}
+
+```
