@@ -1,3 +1,6 @@
+# Basic Cheatsheet of Important Code and Snippets during development
+---
+
 # Machine Learning Tricks
 
 #### Stratify two columns together
